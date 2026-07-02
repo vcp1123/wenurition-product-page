@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Multi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Breadcrumb -->
+
+    <div class="breadcrumb">
+        <a href="#">Home</a> >
+        <a href="#">Bundle & Save</a> >
+        <span>Women's Multi</span>
+    </div>
+
+    <!-- Product Section -->
+
+    <section class="product">
+
+        <!-- Left Side -->
+
+        <div class="product-image">
+
+            <img id="mainImage"
+                 src="images/product-main.png"
+                 alt="Women's Multi">
+
+            <div class="thumbnails">
+
+                <img src="images/thumb1.png"
+                     onclick="changeImage(this)">
+
+                <img src="images/thumb2.png"
+                     onclick="changeImage(this)">
+
+                <img src="images/thumb3.png"
+                     onclick="changeImage(this)">
+
+                <img src="images/thumb4.png"
+                     onclick="changeImage(this)">
+
+                <img src="images/thumb5.png"
+                     onclick="changeImage(this)">
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+
+        <section class="product-details">
+
+            <p class="rating">
+                ★★★★★
+                <span>15 Reviews</span>
+            </p>
+
+            <p class="donation">
+                10% of every order is donated to pro-life care centers
+            </p>
+
+            <h1>Women's Multi</h1>
+
+            <p class="subtitle">
+                DAILY NUTRIENT SUPPORT —
+                THOUGHTFULLY FORMULATED FOR HER
+            </p>
+
+            <!-- Features -->
+
+            <div class="features">
+
+                <div class="feature">
+                    <h4>Better Absorption</h4>
+                    <p>No wasted nutrients</p>
+                </div>
+
+                <div class="feature">
+                    <h4>Easy Daily Ritual</h4>
+                    <p>Gentle formula</p>
+                </div>
+
+                <div class="feature">
+                    <h4>Modern Essentials</h4>
+                    <p>Built for women</p>
+                </div>
+
+            </div>
+
+            <!-- Size -->
+
+            <h4>Select Size</h4>
+
+            <div class="sizes">
+
+                <button>1 Pack</button>
+                <button>2 Pack</button>
+                <button>3 Pack</button>
+
+            </div>
+
+            <!-- Purchase -->
+
+            <div class="purchase-box">
+
+                <label>
+                    <input type="radio"
+                           name="plan"
+                           checked>
+
+                    Subscribe & Save
+                </label>
+
+                <h3>$29.99</h3>
+
+                <ul>
+
+                    <li>Save 10%</li>
+
+                    <li>Free Shipping</li>
+
+                    <li>Cancel Anytime</li>
+
+                </ul>
+
+            </div>
+
+            <div class="purchase-box">
+
+                <label>
+
+                    <input type="radio"
+                           name="plan">
+
+                    One Time Purchase
+
+                </label>
+
+                <h3>$34.99</h3>
+
+            </div>
+
+            <!-- Quantity -->
+
+            <div class="cart">
+
+                <button onclick="decreaseQty()">-</button>
+
+                <span id="qty">1</span>
+
+                <button onclick="increaseQty()">+</button>
+
+                <button class="cart-btn">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- Clinicians Choice -->
+
+            <div class="doctor-section">
+
+                <h3>Clinicians' Choice</h3>
+
+                <div class="doctor">
+
+                    <img src="images/doctor.png" alt="Doctor">
+
+                    <p>
+                        Designed with carefully selected vitamins and minerals
+                        to support women's daily nutritional needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Refill Section -->
+
+            <div class="refill">
+
+                <p>Already have the bottle? Try the refill pack!</p>
+
+                <div class="refill-buttons">
+                    <button class="active">Bottle</button>
+                    <button>Refill</button>
+                </div>
+
+            </div>
+
+            <!-- Pair With Product -->
+
+            <div class="pair-product">
+
+                <h4>SAVE 20% WHEN YOU PAIR WITH</h4>
+
+                <div class="pair-card">
+
+                    <img src="images/product-main.png" alt="Bone Support">
+
+                    <div class="pair-info">
+                        <h5>Wholesome Bone Support</h5>
+                        <p>$29.99</p>
+                    </div>
+
+                    <button>ADD</button>
+
+                </div>
+
+            </div>
+
+            <!-- Product Details -->
+
+            <div class="details">
+
+                <div class="tabs">
+
+                    <button>Details</button>
+
+                    <button>Benefits</button>
+
+                    <button>Supplement Facts</button>
+
+                </div>
+
+                <p>
+                    Women's Multi is formulated with essential vitamins and
+                    minerals to support energy, immunity and overall wellness.
+                </p>
+
+                <!-- Accordion -->
+
+                <div class="accordion">
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">
+                            Suggested use
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Take 2 capsules daily with food, or as directed by your healthcare provider.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">
+                            Shipping
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Free shipping on all subscription orders. Standard orders ship within 2-3 business days.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">
+                            60 Day Money-Back Guarantee
+                            <span>+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Not satisfied? Get a full refund within 60 days of purchase.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- What You Can Expect -->
+
+    <section class="expect">
+
+        <div class="expect-image">
+
+            <img src="images/prenatal-hand.jpg"
+                 alt="Product">
+
+        </div>
+
+        <div class="expect-content">
+
+            <h2>What You Can Expect</h2>
+
+            <h4>Week 1</h4>
+            <p>Better absorption and daily nutrient support.</p>
+
+            <h4>Week 2-4</h4>
+            <p>Improved energy and overall wellness.</p>
+
+            <h4>Week 8-12</h4>
+            <p>Supports long-term health and consistency.</p>
+
+            <button>
+                START YOUR ROUTINE
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Reviews -->
+
+    <section class="reviews">
+
+        <h2>
+            Loved By Thousands Of Families
+        </h2>
+
+        <div class="review-container">
+
+            <div class="review">
+
+                <h4>★★★★★</h4>
+
+                <h3>Best Vitamin!</h3>
+
+                <p>
+                    Very easy to take and I feel much better every day.
+                </p>
+
+                <span>- Lauren</span>
+
+            </div>
+
+            <div class="review">
+
+                <h4>★★★★★</h4>
+
+                <h3>Amazing Product</h3>
+
+                <p>
+                    Great quality and worth every penny.
+                </p>
+
+                <span>- Megan</span>
+
+            </div>
+
+        </div>
+
+        <button>
+            READ ALL REVIEWS
+        </button>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="question">
+
+        <button class="dropdown">
+            What makes this product different?
+        </button>
+
+        <div class="answer">
+            <p>
+                It contains high-quality ingredients designed for better absorption.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="question">
+
+        <button class="dropdown">
+            Is it safe for daily use?
+        </button>
+
+        <div class="answer">
+            <p>
+                Yes. It is designed for everyday use.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="question">
+
+        <button class="dropdown">
+            When should I take it?
+        </button>
+
+        <div class="answer">
+            <p>
+                Preferably with food every day.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
