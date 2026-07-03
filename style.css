@@ -38,6 +38,17 @@ a{
     width:100%;
 }
 
+.thumb-btn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.thumb-btn img {
+    display: block;
+}
+
 .thumbnails{
     display:flex;
     gap:10px;
@@ -76,75 +87,257 @@ a{
     color:#666;
 }
 
+.features-wrap{
+    position:relative;
+    margin:35px 0 20px;
+}
+
+.features-badge{
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#48586a;
+    color:#fff;
+    font-size:11px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    padding:6px 16px;
+    white-space:nowrap;
+}
 
 .features{
     display:flex;
-    gap:15px;
-    margin:20px 0;
+    background:#dbdfe2;
+    padding:25px 15px 18px;
 }
 
 .feature{
     flex:1;
-    border:1px solid #ddd;
-    padding:15px;
     text-align:center;
+    padding:0 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.feature:last-child{
+    border-right:none;
+}
+
+.feature-icon{
+    margin-bottom:8px;
+    color:#48586a;
+    font-size:20px;
 }
 
 .feature h4{
-    margin-bottom:8px;
+    font-size:14px;
+    margin-bottom:6px;
+    color:#2b2b2b;
 }
 
-.sizes{
-    display:flex;
-    gap:10px;
-    margin:20px 0;
+.feature p{
+    font-size:13px;
+    color:#666;
 }
 
-.sizes button{
-    flex:1;
-    padding:12px;
-    border:1px solid #999;
-    background:white;
-    cursor:pointer;
+
+h4 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #2b3a4a;
+    text-transform: uppercase;
+    margin-bottom: 12px;
 }
 
-.purchase-box{
-    border:1px solid #ccc;
-    padding:15px;
-    margin:15px 0;
+.sizes {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
-.purchase-box ul{
-    margin-top:10px;
-    margin-left:20px;
+.sizes button {
+    flex: 1;
+    position: relative;
+    background: #fff;
+    border: 1px solid #d8d2c8;
+    padding: 22px 10px 16px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9a978f;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
 }
 
-.purchase-box li{
-    margin-bottom:5px;
+.sizes button.active {
+    border: 2px solid #3d4f5f;
+    color: #2b3a4a;
+    font-weight: 600;
 }
 
-.cart{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-top:20px;
+.sizes button .save {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d8cfc0;
+    color: #8b8378;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    text-transform: uppercase;
 }
 
-.cart button{
-    padding:10px 15px;
-    cursor:pointer;
+.purchase-box {
+    border: 1px solid #d8d2c8;
+    background: #fff;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    cursor: pointer;
 }
 
-.cart-btn{
-    background:#3d5144;
-    color:white;
-    border:none;
+.purchase-box.active {
+    border: 2px solid #3d4f5f;
 }
 
+.purchase-box label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #2b3a4a;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.purchase-box input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #4a5a68;
+    margin: 0;
+}
+
+.purchase-box:not(.active) label {
+    color: #a8a49b;
+    font-weight: 500;
+}
+
+.purchase-box .tag {
+    background: #d8cfc0;
+    color: #8b8378;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.purchase-box h3 {
+    position: absolute;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2b3a4a;
+}
+
+
+.purchase-box {
+    position: relative;
+}
+
+.purchase-box h3 {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    margin: 0;
+}
+
+.purchase-box:not(.active) h3 {
+    color: #b5b0a6;
+}
+
+.purchase-box .old-price {
+    font-size: 15px;
+    font-weight: 400;
+    color: #b5b0a6;
+    text-decoration: line-through;
+    margin-left: 6px;
+}
+
+.purchase-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 0;
+    border-top: 1px solid #e4dfd6;
+    padding-top: 12px;
+}
+
+.purchase-box ul li {
+    font-size: 14px;
+    color: #3d4b57;
+    padding: 5px 0;
+}
+
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d8d2c8;
+    overflow: hidden;
+}
+
+
+.qty-box button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    width: 34px;
+    height: 56px;
+    cursor: pointer;
+    color: #2b3a4a;
+}
+
+.qty-box #qty {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b3a4a;
+    min-width: 30px;
+    text-align: center;
+}
+
+.cart-btn {
+    flex: 1;
+    background: #4a5a68 ;
+    color: #fff;
+    border: none ;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    height: 56px;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background: #3d4b57 ;
+}
 .doctor-section{
     margin-top:30px;
     border:1px solid #ddd;
     padding:20px;
+    background: #596d7e85 ;
 }
 
 .doctor{
@@ -164,17 +357,28 @@ a{
 
 .tabs{
     display:flex;
-    gap:10px;
+    justify-content:space-between;
+    border-bottom:1px solid #e0e0e0;
+    padding-bottom:12px;
     margin-bottom:20px;
 }
 
 .tabs button{
-    padding:10px 20px;
-    border:1px solid #ccc;
-    background:white;
+    padding:0;
+    border:none;
+    background:transparent;
+    font-size:13px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#b3b3b3;
+    font-weight:500;
     cursor:pointer;
 }
 
+.tabs button.active{
+    color:#1a1a1a;
+    font-weight:600;
+}
 .expect{
     display:flex;
     gap:40px;
@@ -301,7 +505,7 @@ a{
 .refill-buttons button{
     flex:1;
     padding:10px;
-    border:1px solid #ccc;
+    border:1px #ccc;
     background:white;
     cursor:pointer;
 }
