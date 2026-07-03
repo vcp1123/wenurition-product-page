@@ -25,36 +25,44 @@
 
         <!-- Left Side -->
 
-        <div class="product-image">
+       <div class="product-image">
 
-            <img id="mainImage"
-                 src="images/product-main.png"
-                 alt="Women's Multi">
+    <img id="mainImage"
+         src="images/product-main.png"
+         alt="Women's Multi">
 
-            <div class="thumbnails">
+    <div class="thumbnails">
+<button type="button" class="thumb-btn" onclick="changeImage(this)">
+            <img src="images/product-main.png" alt="Product view 1">
+        </button>
 
-                <img src="images/thumb1.png"
-                     onclick="changeImage(this)">
+        <button type="button" class="thumb-btn" onclick="changeImage(this)">
+            <img src="images/thumb1.png" alt="Product view 1">
+        </button>
 
-                <img src="images/thumb2.png"
-                     onclick="changeImage(this)">
+        <button type="button" class="thumb-btn" onclick="changeImage(this)">
+            <img src="images/thumb2.png" alt="Product view 2">
+        </button>
 
-                <img src="images/thumb3.png"
-                     onclick="changeImage(this)">
+        <button type="button" class="thumb-btn" onclick="changeImage(this)">
+            <img src="images/thumb3.png" alt="Product view 3">
+        </button>
 
-                <img src="images/thumb4.png"
-                     onclick="changeImage(this)">
+        <button type="button" class="thumb-btn" onclick="changeImage(this)">
+            <img src="images/thumb4.png" alt="Product view 4">
+        </button>
 
-                <img src="images/thumb5.png"
-                     onclick="changeImage(this)">
+        <button type="button" class="thumb-btn" onclick="changeImage(this)">
+            <img src="images/thumb5.png" alt="Product view 5">
+        </button>
 
-            </div>
+    </div>
 
-        </div>
+</div>
 
         <!-- Right Side -->
 
-        <section class="product-details">
+        <div class="product-details">
 
             <p class="rating">
                 ★★★★★
@@ -72,95 +80,99 @@
                 THOUGHTFULLY FORMULATED FOR HER
             </p>
 
-            <!-- Features -->
+          <!-- Features -->
+<div class="features-wrap">
 
-            <div class="features">
+    <span class="features-badge">Designed to Improve</span>
 
-                <div class="feature">
-                    <h4>Better Absorption</h4>
-                    <p>No wasted nutrients</p>
-                </div>
+    <div class="features">
 
-                <div class="feature">
-                    <h4>Easy Daily Ritual</h4>
-                    <p>Gentle formula</p>
-                </div>
-
-                <div class="feature">
-                    <h4>Modern Essentials</h4>
-                    <p>Built for women</p>
-                </div>
-
+        <div class="feature">
+            <span class="feature-icon">❄</span>
+            <div class="feature-details">
+                <h4>Better Absorption</h4>
+            <p>No wasted nutrients</p>
             </div>
+        </div>
+<div class="feature">
+            <span class="feature-icon">❄</span>
+            <div class="feature-details">
+                <h4>Better Absorption</h4>
+            <p>No wasted nutrients</p>
+            </div>
+        </div>
 
+        <div class="feature">
+            <span class="feature-icon">❄</span>
+            <div class="feature-details">
+                <h4>Better Absorption</h4>
+            <p>No wasted nutrients</p>
+            </div>
+        </div>
+       
+    </div>
+
+</div>
             <!-- Size -->
 
-            <h4>Select Size</h4>
+           <h4>Select Size</h4>
 
-            <div class="sizes">
+<div class="sizes">
+    <button class="active">1 Pack</button>
+    <button>2 Pack <span class="save">Save $XX.XX</span></button>
+    <button>3 Pack <span class="save">Save $XX.XX</span></button>
+</div>
 
-                <button>1 Pack</button>
-                <button>2 Pack</button>
-                <button>3 Pack</button>
+<!-- Purchase -->
 
-            </div>
+<div class="purchase-box active">
 
-            <!-- Purchase -->
+   <label>
+    <input type="radio" name="plan" checked>
+    <span class="custom-radio"></span>
+    Subscribe & Save
+    <span class="tag">Save 10%</span>
+</label>
 
-            <div class="purchase-box">
+    <h3>$29.99 <span class="old-price">$XX.XX</span></h3>
 
-                <label>
-                    <input type="radio"
-                           name="plan"
-                           checked>
+    <ul>
+        <li>Save 10% on every monthly delivery</li>
+        <li>Free shipping on all subscriptions</li>
+        <li>Earn 1.5x loyalty points on recurring orders</li>
+        <li>Never forget to reorder</li>
+        <li>Change or cancel anytime</li>
+    </ul>
 
-                    Subscribe & Save
-                </label>
+</div>
 
-                <h3>$29.99</h3>
+<div class="purchase-box">
 
-                <ul>
+    <label>
+        <input type="radio" name="plan">
+        One Time Purchase
+    </label>
 
-                    <li>Save 10%</li>
+    <h3>$34.99</h3>
 
-                    <li>Free Shipping</li>
+</div>
 
-                    <li>Cancel Anytime</li>
 
-                </ul>
+<!-- Quantity -->
 
-            </div>
+<div class="cart">
 
-            <div class="purchase-box">
+    <div class="qty-box">
+        <button onclick="decreaseQty()">-</button>
+        <span id="qty">1</span>
+        <button onclick="increaseQty()">+</button>
+    </div>
 
-                <label>
+    <button class="cart-btn">
+        ADD TO CART
+    </button>
 
-                    <input type="radio"
-                           name="plan">
-
-                    One Time Purchase
-
-                </label>
-
-                <h3>$34.99</h3>
-
-            </div>
-
-            <!-- Quantity -->
-
-            <div class="cart">
-
-                <button onclick="decreaseQty()">-</button>
-
-                <span id="qty">1</span>
-
-                <button onclick="increaseQty()">+</button>
-
-                <button class="cart-btn">
-                    ADD TO CART
-                </button>
-
-            </div>
+</div>
 
             <!-- Clinicians Choice -->
 
@@ -221,7 +233,7 @@
 
                 <div class="tabs">
 
-                    <button>Details</button>
+                    <button class="active">Details</button>
 
                     <button>Benefits</button>
 
