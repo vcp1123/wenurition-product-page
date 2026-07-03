@@ -1,5 +1,6 @@
-function changeImage(image) {
-    document.getElementById("mainImage").src = image.src;
+function changeImage(button) {
+    const newSrc = button.querySelector('img').src;
+    document.getElementById('mainImage').src = newSrc;
 }
 
 let quantity = 1;
